@@ -1,0 +1,34 @@
+<div class="heading">Create your Account</div>
+<div class="input">
+	<form class="form-horizontal" role="form" ng-submit="submitRegister()">
+		<input type="hidden" name="_token" value="6z7mfMW1GwKzG2sgsG9icqN1bfcJTooGwIOySP22">
+		<div class="login-input-group">
+			<span class="login-input-group-addon" id="basic-addon3"><i class="fa fa-sign-in fa-fw"></i></span>
+			<input type="text" class="here form-control" placeholder="user name" aria-describedby="basic-addon2" value="" ng-model="userName">
+		</div>
+		<div class="login-input-group">
+			<span class="login-input-group-addon" id="basic-addon3"><i class="fa fa-user fa-fw"></i></span>
+			<input type="text" class="here form-control" placeholder="Full name" aria-describedby="basic-addon2" value="" ng-model="fullName">
+		</div>
+		<div class="login-input-group">
+			<span class="login-input-group-addon" id="basic-addon3"><i class="fa fa-home fa-fw"></i></span>
+			<input type="text" class="here form-control" placeholder="Address" aria-describedby="basic-addon2" value="" ng-model="Address">
+		</div>
+		<div class="login-input-group">
+			<span class="login-input-group-addon" id="basic-addon1"><i class="fa fa-at fa-fw"></i></span>
+			<input type="email" class="here form-control" placeholder="email" aria-describedby="basic-addon1" value="" ng-model="email">
+		</div>
+		<div class="login-input-group">
+			<span class="login-input-group-addon" id="basic-addon2"><i class="fa fa-key fa-fw"></i></span>
+			<input type="password" class="here form-control" placeholder="password" aria-describedby="basic-addon2"  ng-model="password">
+		</div>
+		<div class="login-input-group">
+			<span class="login-input-group-addon" id="basic-addon2"><i class="fa fa-key fa-fw"></i></span>
+			<input type="password" class="here form-control" placeholder="confirm password" aria-describedby="basic-addon2"  ng-model="password2">
+		</div>
+		<button type="submit" class="btn btn-default btn-lg submit">Signup</button>
+	</form>
+</div>
+<div class="rightFooter">
+	<a ui-sref="login">Already have an Account?</a>
+</div>

@@ -1,0 +1,38 @@
+<div>
+    
+    <div class="tab-pane active" id="menu">
+        <div class="photo-container text-center">
+                <img src="images/logo.jpg" alt="" class="img-circle dash-profile" />
+            <div class="t-p">
+                <a href="">Event Management System</a>
+            </div>
+
+        </div>
+        <div class="section-heading">Menu</div>
+        <ul class="nav sidebar-nav">
+			<li class="sidenav-dropdown" ng-class="{'show-subnav': showingSubNav=='event_management'}" ng-mouseover="hoverCancel()">
+                <a class="subnav-toggle" href="javascript:;" ng-click="showSubNav('event_management')"><i class="fa fa-toggle-off"></i> <span class="menu-text">Event Management <i class="fa fa-angle-down  pull-right"></i></span></a>
+                <ul class="nav sidenav-sub-menu" collapse="showingSubNav!='event_management'">
+                    <li ng-class="{active: $state.includes('create_event')}"><a ui-sref="create_event" ><i class="fa fa-circle-o"></i> Create Event </a></li>
+                    <li ng-class="{active: $state.includes('delete_event')}"><a ui-sref="delete_event" ><i class="fa fa-arrows-v"></i> Delete Event</a></li>
+                    <li ng-class="{active: $state.includes('view_event')}"><a ui-sref="view_event" ><i class="fa fa-flag-o"></i> View Event</a></li>
+                 </ul>
+            </li>
+			<li  ng-class="{active: $state.includes('latest_event')}"><a ui-sref="latest_event" ng-click="showSubNav(0)"><i class="fa fa-bookmark-o"></i> <span class="menu-text">Latest Event</span></a></li>
+			
+			<li  ng-class="{active: $state.includes('search_event')}"><a ui-sref="search_event" ng-click="showSubNav(0)"><i class="fa fa-bookmark-o"></i> <span class="menu-text">Search Event</span></a></li>
+		
+			<li  ng-class="{active: $state.includes('my_account')}"><a ui-sref="my_account" ng-click="showSubNav(0)"><i class="fa fa-bookmark-o"></i> <span class="menu-text">My Account</span></a></li>
+
+			<li class="sidenav-dropdown" ng-class="{'show-subnav': showingSubNav=='category_management'}" ng-mouseover="hoverCancel()">
+                <a class="subnav-toggle" href="javascript:;" ng-click="showSubNav('category_management')"><i class="fa fa-toggle-off"></i> <span class="menu-text">Category Management <i class="fa fa-angle-down  pull-right"></i></span></a>
+                <ul class="nav sidenav-sub-menu" collapse="showingSubNav!='category_management'">
+                    <li ng-class="{active: $state.includes('create_category')}"><a ui-sref="create_category" ><i class="fa fa-circle-o"></i>Create Category</a></li>
+                    <li ng-class="{active: $state.includes('delete_category')}"><a ui-sref="delete_category" ><i class="fa fa-flag-o"></i> Delete Category</a></li>
+                    <li ng-class="{active: $state.includes('view_category')}"><a ui-sref="view_category" ><i class="fa fa-exchange"></i> View Category </a></li>
+                     </ul>
+            </li>
+			
+			
+    </div>
+</div>

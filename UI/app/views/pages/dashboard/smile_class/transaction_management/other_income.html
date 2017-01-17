@@ -1,0 +1,48 @@
+<pageheader pagename="Other Income"></pageheader>
+
+<div class="conter-wrapper" data-ng-init="init()">                
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-info" >
+                <div class="panel-heading">
+                    <h3 class="panel-title">Photocopy Charges</h3>
+                </div>
+                <div class="panel-body">
+                    <form ng-submit="submit()"> 						
+                        <div class="form-group">
+                            <label for="salaryAmount">User</label>
+                            <select class="form-control" ng-options="obj.teaId as obj.teaName for obj in tea_names_select" ng-model="selected">
+                            </select>
+                        </div>	
+                        <!-- <div class="form-group">
+                                <label for="salaryAmount">Description</label>
+                                <input 
+                                        type="text" 
+                                        class="form-control" 
+                                        id="salaryAmount"
+                                        placeholder="Description"
+                                        required =""
+                                        ng-model="description"
+                                /> 
+                        </div>-->
+                        <div class="form-group">
+                            <label for="salaryAmount">Amount</label>
+                            <input 
+                                type="number" 
+                                step="0.01" 
+                                class="form-control" 
+                                id="salaryAmount" 
+                                placeholder="Amount"
+                                required =""
+                                ng-model="salaryAmount"
+                                />
+                        </div>								
+                        <button  type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
